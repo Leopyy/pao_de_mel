@@ -1,2 +1,36 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="banner">
+  <div class="container">
+    <!-- <h1><span id="banner-typed-text"></span> </h1> -->
+    <h1>Experimente o melhor Pão de Mel da sua vida!</h1>
+    <p>Feito em casa com uma receita tradicional e familiar, nosso <br>Pão de Mel
+    tem maravilhado os clientes por mais de 10 anos!</p><br>
+    <%= link_to "Conheça mais!", user_session_path, class: "btn btn-opacity" %>
+  </div>
+</div>
+
+<div class="d-flex justify-content-around">
+  <div class="cards">
+    <div class="card-category-home" id="cobertura">
+      <h2>Deliciosa cobertura</h2>
+      <div class="container w-75">
+        <p>Marca registrada do nosso Pão de Mel, nossa cobertura de chocolate é incomparável, deliciosa e irresistível.</p>
+      </div>
+    </div>
+
+    <div class="card-category-home" id="recheio">
+      <h2>Recheios</h2>
+      <div class="container w-75">
+        <p>Temos três opções: Chocolate, Doce de Leite e Leite Condensado.</p>
+      </div>
+    </div>
+
+    <div class="card-category-home" id="producao">
+      <h2>Produção artesanal</h2>
+      <div class="container w-75">
+        <p>Nossos produtos são feitos exclusivamente a mão, com total controle de qualidade e higiene, em ambiente limpo e controlado.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= render "shared/footer" %>

@@ -1,1 +1,11 @@
 // Specific CSS for your home-page
+@import "../components/banner";
+@import "../components/button";
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+  #content-wrap {
+    padding-bottom: $footer_height;
+  }
+}
